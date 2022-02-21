@@ -1,7 +1,6 @@
 const User = require('../models/User')
 const Post = require('../models/Post')
 const { BadRequestError } = require('../errors') 
-const e = require('express')
 
 const search = async (req,res) => {
     const { query , type , filter} = req.query
